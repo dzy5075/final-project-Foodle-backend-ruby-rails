@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   ##logout route
   delete 'logout', to: 'sessions#destroy'
-## me route auto-login
+## me route auto-login or persistent
   get 'me', to: 'users#me'
   ## sign up route
   post 'signup', to: 'users#create'

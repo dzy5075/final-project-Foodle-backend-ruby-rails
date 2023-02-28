@@ -19,6 +19,7 @@ class UsersController < ApplicationController
         end
     end
     
+    # for persistence
     def me
         
         p 'ME'
