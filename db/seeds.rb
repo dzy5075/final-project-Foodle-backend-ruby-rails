@@ -1,16 +1,16 @@
 puts "🌱 Seeding users..."
-joey = User.create!(name: "Joey", email: "joey@gmail.com", password_digest: "joey123")
-jason = User.create!(name: "Jason", email: "jason@gmail.com", password_digest: "jason123")
-tomer = User.create(name: "Tomer", email: "tomer@gmail.com", password_digest: "610tt")
-kevin = User.create(name: "Kevin", email: "kevin@gmail.com", password_digest: "220mk")
-dan = User.create(name: "Daniel", email: "dan@gmail.com", password_digest: "800yd")
-avi = User.create(name: "Avi", email: "avi@gmail.com", password_digest: "920ra")
-adam = User.create(name: "Adam", email: "adam@gmail.com", password_digest: "710fa")
-james = User.create(name: "James", email: "james@gmail.com", password_digest: "820pj")
-olivia = User.create(name: "Olivia", email: "olivia@gmail.com", password_digest: "210ro")
-vero = User.create(name: "Veronique", email: "vero@gmail.com", password_digest: "400cv")
-sophia = User.create(name: "Sophia", email: "sophia@gmail.com", password_digest: "030bs")
-diana = User.create(name: "Diana", email: "diana@gmail.com", password_digest: "620pd")
+joey = User.create!(name: "Joey", email: "joey@gmail.com", password: "joey123")
+jason = User.create!(name: "Jason", email: "jason@gmail.com", password: "jason123")
+tomer = User.create(name: "Tomer", email: "tomer@gmail.com", password: "610tt")
+kevin = User.create(name: "Kevin", email: "kevin@gmail.com", password: "220mk")
+dan = User.create(name: "Daniel", email: "dan@gmail.com", password: "800yd")
+avi = User.create(name: "Avi", email: "avi@gmail.com", password: "920ra")
+adam = User.create(name: "Adam", email: "adam@gmail.com", password: "710fa")
+james = User.create(name: "James", email: "james@gmail.com", password: "820pj")
+olivia = User.create(name: "Olivia", email: "olivia@gmail.com", password: "210ro")
+vero = User.create(name: "Veronique", email: "vero@gmail.com", password: "400cv")
+sophia = User.create(name: "Sophia", email: "sophia@gmail.com", password: "030bs")
+diana = User.create(name: "Diana", email: "diana@gmail.com", password: "620pd")
 
 
 
