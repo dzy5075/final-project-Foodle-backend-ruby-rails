@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :authorized, only: [:create, :index]
+    skip_before_action :authorized, only: [:create, :index, :show]
 
     def index
         users = User.all
@@ -13,10 +13,15 @@ class UsersController < ApplicationController
     end
 
     def show
-        if current_user
-            user = User.find(params[:id])
-            render json: user, status: :ok
-        end
+        # bottom method only for if the user is logged in
+        # --------------------------------------------------
+        # if current_user
+        #     user = User.find(params[:id])
+        #     render json: user, status: :ok
+        # end
+        # --------------------------------------------------
+        user = User.find(params[:id])
+        render json: user, status: :ok
     end
     
     # for persistence
