@@ -8,7 +8,7 @@ class FavoriteRecipesController < ApplicationController
     end
 
     def create 
-        newfav = FavoriteRecipe.create!(recipe_params)
+        newfav = FavoriteRecipe.create!(favorite_params)
         render json: newfav, status: :created
     end
 
@@ -26,5 +26,11 @@ class FavoriteRecipesController < ApplicationController
             render json: {error: "Favorite Recipe not found" }, status: :not_found
         end
 
+    end
+
+    private 
+
+    def favorite_params
+        params.permit(:user_id, :recipe_id)
     end
 end
