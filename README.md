@@ -45,6 +45,4 @@ The backend API should now be running at `http://localhost:4000/`.
 
 ## License
 
-* ...
-
 The Foodle backend is released under the [MIT License](LICENSE).
