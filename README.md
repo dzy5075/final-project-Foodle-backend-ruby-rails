@@ -1,24 +1,47 @@
-# README
+# Foodle Backend - Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository contains the backend API for the [Foodle](https://github.com/dzy5075/final-project-Foodle-frontend) project, a personalized food and recipe app. The API is built using Ruby on Rails and provides endpoints for managing recipes, user accounts, and other app features.
 
-Things you may want to cover:
+## Table of Contents
 
-* Ruby version
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [License](#license)
 
-* System dependencies
+## Requirements
 
-* Configuration
+- Ruby [version]
+- Rails [version]
 
-* Database creation
+## Installation
 
-* Database initialization
+1. **Clone the repository**
 
-* How to run the test suite
+```bash
+git clone https://github.com/dzy5075/final-project-Foodle-backend-ruby-rails.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. **Navigate to the project directory**
 
-* Deployment instructions
+```bash
+cd final-project-Foodle-backend-ruby-rails
+```
 
-* ...
+3. **Install dependencies**
+
+```bash
+bundle install
+```
+
+4. **Start the development server**
+
+```bash
+rails server
+```
+
+The backend API should now be running at `http://localhost:4000/`.
+
+
+## License
+
+The Foodle backend is released under the [MIT License](LICENSE).
