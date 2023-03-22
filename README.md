@@ -10,8 +10,8 @@ This repository contains the backend API for the [Foodle](https://github.com/dzy
 
 ## Requirements
 
-- Ruby [version]
-- Rails [version]
+- Ruby 2.6
+- Rails 7.0.4.2
 
 ## Installation
 
