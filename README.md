@@ -41,7 +41,10 @@ rails server
 
 The backend API should now be running at `http://localhost:4000/`.
 
+* Services (job queues, cache servers, search engines, etc.)
 
 ## License
+
+* ...
 
 The Foodle backend is released under the [MIT License](LICENSE).
