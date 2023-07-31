@@ -11,9 +11,12 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_02_23_191245) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "favorite_recipes", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "recipe_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "recipe_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["recipe_id"], name: "index_favorite_recipes_on_recipe_id"
@@ -34,7 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_23_191245) do
     t.string "name"
     t.string "quantity"
     t.string "aisle"
-    t.integer "recipe_id", null: false
+    t.bigint "recipe_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["recipe_id"], name: "index_ingredients_on_recipe_id"
